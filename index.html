@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071426" />
+    <meta name="description" content="Бесплатная проверка доступа, голоса и инструментов ChatGPT перед практикумом STURZA LAB." />
+    <title>ChatGPT с нуля — STURZA LAB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="STURZA LAB — в начало">
+        <span class="brand-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+        <span>STURZA LAB</span>
+      </a>
+      <span class="product-line">Сайт голосом</span>
+      <span class="header-note">Бесплатный старт</span>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Бесплатный бонус</p>
+          <h1>ChatGPT<br />с нуля</h1>
+          <p class="lead">Проверьте доступ, голос и нужные инструменты до покупки практикума</p>
+          <div class="hero-actions">
+            <button class="primary-button" id="start-button" type="button">Начать проверку <span>→</span></button>
+            <p class="meta-line"><span>8 шагов</span><b>•</b><span>7 минут</span><b>•</b><span>бесплатно</span></p>
+          </div>
+        </div>
+
+        <div class="voice-stage" aria-hidden="true">
+          <div class="sound-wave wave-left"></div>
+          <div class="mic-orbit">
+            <div class="mic"><span class="mic-capsule"></span><span class="mic-stem"></span><span class="mic-base"></span></div>
+          </div>
+          <div class="sound-wave wave-right"></div>
+          <span class="listening">Слушаю…</span>
+          <div class="mini-progress" id="hero-progress"></div>
+        </div>
+
+        <div class="route-area" id="route-start">
+          <div class="route-heading"><span>Шаг 1 из 8</span><h2>Где вы сейчас?</h2></div>
+          <div class="route-grid" role="radiogroup" aria-label="Текущее местоположение">
+            <button class="route-card selected" type="button" role="radio" aria-checked="true" data-route="supported">
+              <span class="route-index">01</span><span class="route-mark">◎</span>
+              <span class="route-text"><strong>Нахожусь в поддерживаемой стране</strong><small>Проверим приложение, голос и доступные функции</small></span>
+              <span class="radio-dot"></span>
+            </button>
+            <button class="route-card" type="button" role="radio" aria-checked="false" data-route="russia">
+              <span class="route-index">02</span><span class="route-mark">⌖</span>
+              <span class="route-text"><strong>Сейчас в России</strong><small>Настроим доступ, установку и варианты оплаты</small></span>
+              <span class="radio-dot"></span>
+            </button>
+            <button class="route-card" type="button" role="radio" aria-checked="false" data-route="travel">
+              <span class="route-index">03</span><span class="route-mark">◇</span>
+              <span class="route-text"><strong>Путешествую</strong><small>Проверим аккаунт и доступ в текущей стране</small></span>
+              <span class="radio-dot"></span>
+            </button>
+          </div>
+          <div class="route-continue">
+            <p id="route-hint">Маршрут можно изменить в любой момент.</p>
+            <button class="secondary-button" id="route-continue" type="button">Продолжить <span>→</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="diagnostic" id="diagnostic" aria-live="polite">
+        <div class="diagnostic-shell">
+          <aside class="step-rail" aria-label="Прогресс проверки">
+            <p>Ваша проверка</p>
+            <div class="rail-steps" id="rail-steps"></div>
+            <button class="reset-button" id="reset-button" type="button">Начать заново</button>
+          </aside>
+          <article class="step-card" id="step-card"></article>
+        </div>
+      </section>
+
+      <section class="trust-section">
+        <p>STURZA LAB · обновлено 20 июля 2026</p>
+        <h2>Сначала проверяем возможность. Потом продаём обучение.</h2>
+        <div class="trust-grid">
+          <article><span>01</span><strong>Без серых схем</strong><p>Не предлагаем чужие аккаунты, вымышленные данные и обход региональных правил.</p></article>
+          <article><span>02</span><strong>Без лишней оплаты</strong><p>Сначала тестируем бесплатный аккаунт и только затем решаем, нужен ли Plus.</p></article>
+          <article><span>03</span><strong>Без технического одиночества</strong><p>Каждый шаг заканчивается понятным результатом: работает, нужно настроить или пока рано покупать.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
